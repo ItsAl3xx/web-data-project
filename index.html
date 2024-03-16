@@ -10,7 +10,7 @@
         /* Custom styles */
         /* Sets up a light theme by default and a dark theme when .dark-mode is applied */
         body {
-            background-color: #FFFFFF; /* Light background for the light theme */
+            background-color: #F0F0F0; /* Light background for the light theme */
             color: black; /* Dark text for contrast */
         }
         .dark-mode {
@@ -41,8 +41,9 @@
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Data 1</th>
-                        <th scope="col">Data 2</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">Capital</th>
+                        <th scope="col">Population</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -53,14 +54,18 @@
             <!-- Form Section -->
             <form id="data-form">
                 <div class="form-group">
-                    <label for="data1">Data 1</label>
+                    <label for="data1">Country</label>
                     <input type="text" class="form-control" id="data1" required>
                 </div>
                 <div class="form-group">
-                    <label for="data2">Data 2</label>
+                    <label for="data2">Capital</label>
                     <input type="text" class="form-control" id="data2" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                    <label for="data2">Population</label>
+                    <input type="text" class="form-control" id="data2" required>
+                </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 <!-- Submit button for the form -->
             </form>
             
