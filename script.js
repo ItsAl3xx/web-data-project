@@ -31,7 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const capital = document.getElementById('capital').value;
         const population = document.getElementById('population').value;
         addRow({ country, capital, population });
-        this.reset(); // Reset form fields
+        // Clear form inputs
+        document.getElementById('country').value = '';
+        document.getElementById('capital').value = '';
+        document.getElementById('population').value = '';
     };
 
     // Clear table functionality
